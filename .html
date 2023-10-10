@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Life Ministries</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS stylesheet -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #f1c40f;
+        }
+
+        .section {
+            display: none;
+            padding: 40px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #1a73e8;
+            font-size: 24px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 20px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: #1a73e8;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Navigation links to show/hide sections -->
+            <ul>
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('vision')">Vision</a></li>
+                <li><a href="#" onclick="showSection('beliefs')">What WE BELIEVE</a></li>
+                <li><a href="#" onclick="showSection('leadership')">Leadership</a></li>
+                <li><a href="#" onclick="showSection('kingdom-kids')">Kingdom Kids</a></li>
+                <li><a href="#" onclick="showSection('calendar')">Monthly Calendar</a></li>
+                <li><a href="#" onclick="showSection('give')">Give</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <h2>Welcome to Kingdom Life Ministries</h2>
+        <p>There's a place for you here.</p>
+    </section>
+
+    <!-- Vision Section -->
+    <section id="vision" class="section">
+        <h2>Vision</h2>
+        <p>At Kingdom Life Ministries, we believe that a life lived well puts Christ first. Our vision is to reach the lost by embracing God’s love, empower with the truth of the Word, and disciple so we can all grow and serve together.</p>
+    </section>
+
+    <!-- What WE BELIEVE Section -->
+    <section id="beliefs" class "section">
+        <h2>What WE BELIEVE</h2>
+        <!-- Include your beliefs here using appropriate HTML tags -->
+        <!-- Sample belief -->
+        <h3>WE BELIEVE The scriptures inspired.</h3>
+        <p>The Bible is the inspired Word of God, a revelation from God to man, the infallible rule of faith and conduct, and is superior to conscience and reason, but not contrary to reason (2 Timothy 3:15, 2 Timothy 3:16, 1 Peter 2:2).</p>
+        <!-- Repeat this structure for other beliefs -->
+    </section>
+
+    <!-- Leadership Section -->
+    <section id="leadership" class="section">
+        <h2>Leadership</h2>
+        <h3>Senior Pastor</h3>
+        <p>John and Heather Garcia</p>
+        <p>Pastor Johnny gave his life to the Lord in 2008. Since then, he has grown spiritually and answered the calling on his life. He has a heart for God’s people.</p>
+        <p>Johnny and his wife Heather met in 2004 in Knoxville, TN. They moved back to Johnny's hometown Kingston, NY in 2008. They've been happily married since 2012. They worked together as youth leaders for many years. Johnny and Heather are the proud parents of four daughters: Arielle, Alleyah, Alexis, and Madison.</p>
+
+        <h3>Assistant Pastor</h3>
+        <p>Sara and Jonathan Carle</p>
+        <p>Jonathan and Sara have always felt the call of servanthood. Since giving their lives to the Lord, they have seen Him work in them in amazing ways. Sara was born on the small Caribbean Island of Montserrat. As she has walked with the Lord, she was given opportunities to serve in varying capacities.</p>
+        <p>Jonathan has served with Pastor Johnny and his wife Heather as youth group leaders. Jonathan and Sara have been married for over 10 years and are proud parents of three wonderful children. They reside in West Hurley.</p>
+    </section>
+
+    <!-- Monthly Calendar Section -->
+    <section id="calendar" class="section">
+        <h2>Monthly Calendar</h2>
+        <!-- Google Calendar Embed Code -->
+        <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID_HERE" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </section>
+
+    <!-- Give Section -->
+    <section id="give" class="section">
+        <h2>Give</h2>
+        <!-- Content for the Give section goes here -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Kingdom Life Ministries</p>
+    </footer>
+
+    <script>
+        // JavaScript function to show/hide sections
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            if (selectedSection) {
+                selectedSection.style display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+
